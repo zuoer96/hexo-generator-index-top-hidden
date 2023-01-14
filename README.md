@@ -1,14 +1,14 @@
 # hexo-generator-index-top-hidden
-[![npm-image]][npm-url]
-[![lic-image]](LICENSE)
+[![npm-image]][https://img.shields.io/npm/v/hexo-generator-index-top-hidden?style=flat-square]
+[![lic-image]](https://img.shields.io/npm/l/hexo-generator-index-top-hidden?style=flat-square)
 
 hexo 插件：置顶、隐藏文章、隐藏分类
 
 
 # 安装
 ![size-image]
-[![dm-image]][npm-url]
-[![dt-image]][npm-url]
+[![dm-image]][https://img.shields.io/github/languages/code-size/zuoer96/hexo-generator-index-top-hidden?style=flat-square]
+[![dt-image]][https://img.shields.io/npm/dm/hexo-generator-index-top-hidden?style=flat-square]
 
 ``` bash
 $ npm install hexo-generator-indexed
