@@ -17,23 +17,28 @@ $ npm install hexo-generator-index-top-hidden --save
 # 用法
 ## 置顶某篇文章
 在文章的 Front-matter 中增加一个 sticky 参数用来置顶，其值应为大于0的整数，表示置顶的优先级（未指定则默认为 0）。数字越大，文章越靠前。
-```
+```markdown
 ---
 title: example
 sticky: 100
 ---
 ```
 或者
-```
+```markdown
 ---
 title: example
 top: 100
 ---
 ```
+
+> 只是让文章不显示在首页列表中，而可以通过链接正常访问。
+如果不想连链接也不想让访问，可以通过设置 `published: false` 达到效果。
+
 ## 隐藏文章
+
 在 _config.yml 中添加配置：
 
-```
+```yaml
 hide_posts:
   enable: true
   # 自定义隐藏的标识名称
@@ -49,12 +54,12 @@ hide_posts:
 
 注意：不是所有插件注册的 generator 名称都与其插件名称相同。比如 hexo-generator-searchdb 插件，其注册的 generator 名称就是 xml 和 json，而非 searchdb。因此，在填写 public_generators 参数时要注意使用插件实际注册的 generator 名称（可以查阅对应插件的源码来获取准确的注册名）。
 
-## 隐藏单篇文章
+## 在首页隐藏单篇文章
 当一篇文章被设置为「隐藏」时，它不会出现在任何列表中（包括首页、存档、分类页面、标签页面、Feed、站点地图等），也不会被搜索引擎索引（前提是搜索引擎遵守 noindex 标签）。
 
 只有知道文章链接的人才可以访问被隐藏的文章。
 
-```
+```markdown
 ---
 title: example
 hidden: true
@@ -62,17 +67,17 @@ hidden: true
 ```
 虽然首页上被隐藏了，但你仍然可以通过 https://域名/文章url/ 链接访问它。（如果想要完全隐藏一篇文章，可以直接将其设置为[草稿](https://hexo.io/zh-cn/docs/writing.html#%E8%8D%89%E7%A8%BF)）
 
-## 本地查看所有隐藏文章
+## 本地查看所有不在首页显示的文章
 hexo hidden:list
 
 你可以在命令行运行 hexo hidden:list 来获取当前所有的已隐藏文章列表。
 
 插件也在 [Local Variables](https://hexo.io/api/locals) 中添加了 all_posts 和 hidden_posts 变量，供自定义主题使用。
-
-<!-- ## 隐藏某个分类
-在 Hexo 的 _config.yml 中可以通过 hide_categories 选项设置隐藏某个分类下的文章
+ 
+## 隐藏某个分类
+在 Hexo 的 _config.yml 中可以通过 hide_categories 选项设置隐藏某个分类下的文章，**让他在首页不显示**
 ```
 hide_categories:
   - category1
   - category2
-``` -->
+``` 
