@@ -15,7 +15,7 @@ $ npm install hexo-generator-index-top-hidden --save
 ```
 
 # 用法
-## 指定某篇文章
+## 置顶某篇文章
 在文章的 Front-matter 中增加一个 sticky 参数用来置顶，其值应为大于0的整数，表示置顶的优先级（未指定则默认为 0）。数字越大，文章越靠前。
 ```
 ---
