@@ -1,6 +1,6 @@
 {
   "name": "hexo-generator-index-top-hidden",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "hexo 插件：置顶、隐藏文章、隐藏分类",
   "main": "index.js",
   "scripts": {
