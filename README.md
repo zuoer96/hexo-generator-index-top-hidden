@@ -11,7 +11,7 @@ hexo 插件：置顶、隐藏文章、隐藏分类
 ![dt-image](https://img.shields.io/npm/dt/hexo-generator-index-top-hidden?style=flat-square)
 
 ``` bash
-$ npm install hexo-generator-indexed
+$ npm install hexo-generator-index-top-hidden --save
 ```
 
 # 用法
