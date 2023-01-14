@@ -1,0 +1,37 @@
+{
+  "name": "hexo-generator-index-top-hidden",
+  "version": "1.0.2",
+  "description": "hexo 插件：置顶、隐藏文章、隐藏分类",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuoer96/hexo-generator-index-top-hidden.git"
+  },
+  "keywords": [
+    "hexo",
+    "插件",
+    "置顶",
+    "隐藏文章",
+    "隐藏分类"
+  ],
+  "author": "zuoer96",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zuoer96/hexo-generator-index-top-hidden/issues"
+  },
+  "homepage": "https://github.com/zuoer96/hexo-generator-index-top-hidden#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^8.5.0",
+    "eslint-config-hexo": "^5.0.0",
+    "hexo": "^6.0.0",
+    "mocha": "^10.0.0",
+    "nyc": "^15.0.0"
+  },
+  "dependencies": {
+    "hexo-pagination": "2.0.0"
+  }
+}
